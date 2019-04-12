@@ -1,0 +1,92 @@
+<div class="div" style=" float: left; width: 100%">
+	<div class="div" style="width: 500px; margin:20vh auto">
+		<h3 style="font-family: verdana;">Congratulations! You are eligible for taking loans from following banks : </h3>
+
+		<div>
+			<h4 style="font-family: verdana;">Home Bank</h4>
+		</div>
+		<div class="table-responsive">
+
+			<table class="table">
+				<tr>
+					<th> </th>
+					<th>Bank</th>
+					<th>Loan Amount</th>
+					<th>Rate of Interest</th>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="radio" value="CC" [checked]="true" (change)="onItemChange($event)">
+						<!-- <span class="checkmark"></span> -->
+					</td>
+					<td>
+						<label class="container">
+							ICICI
+						</label>
+					</td>
+					<td>30000</td>
+					<td>9.3</td>
+				</tr>
+
+			</table>
+		</div>
+		<div>
+			<h4 style="font-family: verdana;">Other Banks</h4>
+		</div>
+
+		<div class="table-responsive">
+			<table class="table">
+				<tr>
+					<th> </th>
+					<th>Bank</th>
+					<th>Loan Amount</th>
+					<th>Rate of Interest</th>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="radio" name="radio" value="CC" (change)="onItemChange($event)">
+						<!-- <span class="checkmark"></span> -->
+					</td>
+					<td>
+						<label class="container">
+							Axis
+						</label>
+					</td>
+					<td>20000</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="radio" value="CC" (change)="onItemChange($event)">
+						<!-- <span class="checkmark"></span> -->
+					</td>
+					<td>
+						<label class="container">
+							HDFC
+						</label>
+					</td>
+					<td>40000</td>
+					<td>10.3</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="radio" value="CC" (change)="onItemChange($event)">
+						<!-- <span class="checkmark"></span> -->
+					</td>
+					<td>
+						<label class="container">
+							PNB
+						</label>
+					</td>
+					<td>35000</td>
+					<td>11.3</td>
+				</tr>
+			</table>
+		</div>
+		<!--  <a class="proceed" href="thank.html">Submit</a>  -->
+		<div style="padding: 10px;">
+			<button class="button" (click)="submit()">Submit</button>
+		</div>
+	</div>
+</div>

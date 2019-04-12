@@ -1,0 +1,25 @@
+<!-- Modal -->
+<div class="div" style=" float: left; width: 100%; font-size: larger;">
+    <div class="div" style="width: 500px; margin:20vh auto" >
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <p style="color: #FB3C33;
+          font-family: courier;
+          font-size: 100%;"><b>Your transctaion is declined. Would you like to avail loan (Y/N) ? </b></p>
+          <div class="radio inline-block">
+              <label class="container">Yes<input type="radio" name="radio" value="YES" [checked]="true" (change)="onItemChange($event)">
+                <span class="checkmark"></span></label>
+            </div>
+            <div class="radio inline-block">
+                <label class="container">No<input type="radio" name="radio" value="NO" (change)="onItemChange($event)">
+                  <span class="checkmark"></span></label>
+              </div>
+            </div>
+            <div class="modal-footer">
+             <!-- <a href="pan.html" class="btn btn-default">Submit</a>  -->
+             <button class="button" (click)="submit()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>

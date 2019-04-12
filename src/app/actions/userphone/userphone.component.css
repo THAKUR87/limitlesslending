@@ -1,0 +1,19 @@
+.proceed, .proceed:hover {
+    background: green;
+    padding: 10px 30px;
+    border: 0;
+    color: #fff;
+    margin: 30px 0;
+    display: inline-block;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
